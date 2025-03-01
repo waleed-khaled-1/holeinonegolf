@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hole in One</title>
+
+    <link rel="stylesheet" href="css/main.css">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="bar">
+        <h1 class="logo">Hole In One</h1>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="info.html">معلومات عنا</a>
+        <a href="products.html">المنتجات والخدمات</a>
+        <a href="packs.html">الحزم والباقات</a>
+        <a href="contact.html">تواصل معنا</a>
+    </div>
+    
+     <div class="bg_titl">
+
+    <div class="titl">مرحبًا في موقع Hole in one</div>
+   
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h3>معلومات عنا</h3>
+            <p>منتجع Hall In One.<br>هو منتجع الجولف في البرتغال يحتوي على العديد من المرافق</p>
+        </div>
+        <div class="card">
+            <h3>المرافق التي لدينا</h3>
+            <p>المطاعم والمقاهي<br>الإقامة في الفنادق<br>الفنادق<br>النوادي<br>الملاعب</p>
+        </div>
+        <div class="card">
+            <h3>الباقات الموجودة</h3>
+            <p>خمس جولات<br>الجولة الثلاثية<br>استراحة استجمام</p>
+        </div>
+    </div>
+
+
+
+    <script>
+       var images = [
+    'url("images/golfc2.png")',
+    'url("images/golfc1.png")'
+];
+
+        var currentImageIndex = 0;  
+
+        document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('.bg_titl').style.backgroundImage = images[currentImageIndex];
+
+        setInterval(function() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;  
+            document.querySelector('.bg_titl').style.backgroundImage = images[currentImageIndex]; 
+        }, 3000); 
+    });
+    </script>
+
+    
+</body>
+
+<footer>
+
+<p>© 2025 Hole In One Golf - جميع الحقوق محفوظة</p>
+
+</footer>
+
+</html>
